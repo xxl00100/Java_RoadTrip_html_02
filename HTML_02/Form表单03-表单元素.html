@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Form表单元素</title>
+	</head>
+	<body>
+		<form action="https://www.baidu.com/s" method="get">
+			<input type="text" name="wd" />
+			<input type="submit" value="百度一下"/> <br />
+		</form>
+		<!-- 上面模拟百度进行搜索 -->
+		
+		<form action="" method="get">
+		<!-- text用法 -->
+		<input type="text" name="username" value="体验默认内容" /> <br />
+		<input type="text" name="usnaer1" placeholder="请输入身份信息" /> <br />
+		<input type="text" name="username2"  value="666" readonly="true" /> <br />
+		<input type="text" name="username3"  value="777" disabled="true"/> <br />
+		
+		<!-- 单选按钮 -->
+		请选择性别：<br />
+		<input type="radio" name="gender" value="0" checked="true"  />男
+		<input type="radio" name="gender" value="1"  /> 女
+		<br />
+		<!--  -->
+		<!-- 多选按钮 -->
+		请选择喜欢的语言-多选<br />
+		<input type="checkbox" name="favlan" value="0" checked="true" />java
+		<input type="checkbox" name="favlan" value="1" />PHP
+		<input type="checkbox" name="favlan" id="favlan" value="2" />c++
+		<input type="checkbox" name="favlan" value="3" /> js
+		 <br />
+		
+		
+		<!-- 文件  -->
+		<input type="file" name="" id="" value="" /> <br />
+		<input type="hidden" name="uis" id="6523" value="12356" />
+		
+		<!-- 普通按钮，需要和js配合 -->
+		<input type="button" name="普通按钮" id="普通按钮" value="" />
+		<br />
+		重置按钮 <input type="reset" />  <br />
+		<img src="img/001.jpg" />
+		图片按钮 <input type="image" src="img/001.jpg"/> <br />
+		
+		<br />
+		<br />
+		<br />
+		<p> 下拉列表</p>
+		<select name="city" multiple="true">
+			<option value="0"> 请选择</option>
+			<option value="1" selected="true"> 成都</option>
+			<option value="2"> 北京</option>
+			<option value="3"> 西安</option>
+			<option value="4"> 广西</option>
+		</select>
+		
+		<br />
+		<textarea style="resize: none;" rows="10" cols="18">请在这里填写信息</textarea>
+		<br />
+		<label for="kkk">用户名：</label> <input type="text" name="kkk" id="kkk" value="" />
+		
+		<input type="submit" />
+		</form>
+	</body>
+</html>
